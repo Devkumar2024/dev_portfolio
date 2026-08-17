@@ -9,6 +9,7 @@
   --border-color: #3a3a3a;
   --inner-container-bg: #2a2a2a;
   --text-color: #e0e0e0;
+  --link-color: #a0a0a0;
   --shiny-color: #ffdf01;
 }
 
@@ -29,7 +30,7 @@ body {
 }
 
 .sidebar {
-  padding: 40px;
+  padding: 35px;
   height: 90vh;
   background-color: var(--inner-container-bg);
   border-radius: 20px;
@@ -43,8 +44,8 @@ body {
   border: 1px solid var(--border-color);
 }
 
-.profile{
-    text-align: center; /*makes all inline elements centre*/
+.profile {
+  text-align: center; /*makes all inline elements centre*/
 }
 
 /*seedha img tag pe nhi lagana warna saare pe lag jauegi styling*/
@@ -60,7 +61,7 @@ img's under profile */
 .profile h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 15px;
+  margin-top: 10px;
   color: var(--text-color);
 }
 
@@ -72,5 +73,29 @@ img's under profile */
   font-size: 0.8rem;
   border-radius: 8px;
   display: inline-block; /*poori 100% space nhi lega*/
-  margin-top: 8px; 
+  margin-top: 8px;
 }
+
+/*Contact Section*/
+.contact {
+  margin-top: 30px;
+  border-top: 2.5px solid var(--border-color);
+  padding-top: 15px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--link-color);
+}
+
+.value{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.email, .phone, .location{
+    margin-bottom: 15px;
+}
+
+
