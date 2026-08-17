@@ -1,29 +1,76 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #1e1e1e;
-    font-family: sans-serif;
-    color: #a0a0a0;
-    line-height: 1.6;
+:root {
+  --main-background-color: #1e1e1e;
+  --border-color: #3a3a3a;
+  --inner-container-bg: #2a2a2a;
+  --text-color: #e0e0e0;
+  --shiny-color: #ffdf01;
 }
 
-.main-container{
-    display: grid;
-    max-width: 1200px;
-    grid-template-columns: 350px 1fr; /*350px to sidebar, ramaining to next container*/
-    gap: 40px; 
+body {
+  background-color: var(--main-background-color);
+  font-family: sans-serif;
+  color: #a0a0a0;
+  line-height: 1.6;
 }
 
-.sidebar{
-    height: 90vh;
-    background-color: #2a2a2a;
+.main-container {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 350px 1fr; /*350px to sidebar, ramaining to next container*/
+  gap: 40px;
+  padding-top: 40px;
+  margin: 0 auto;
 }
 
-.main-content{
-    height: 90vh;
-    background-color: #2a2a2a;
+.sidebar {
+  padding: 40px;
+  height: 90vh;
+  background-color: var(--inner-container-bg);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.main-content {
+  height: 90vh;
+  background-color: var(--inner-container-bg);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.profile{
+    text-align: center; /*makes all inline elements centre*/
+}
+
+/*seedha img tag pe nhi lagana warna saare pe lag jauegi styling*/
+/*.profile > img targets immediate child only, without it styling comes to all
+img's under profile */
+.profile > img {
+  height: 140px;
+  width: 140px;
+  border: 5px solid var(--border-color);
+  border-radius: 50%;
+}
+
+.profile h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 15px;
+  color: var(--text-color);
+}
+
+.profile p {
+  background-color: var(--main-background-color);
+  padding: 5px 15px;
+  color: var(--shiny-color);
+  border: 1px solid var(--border-color);
+  font-size: 0.8rem;
+  border-radius: 8px;
+  display: inline-block; /*poori 100% space nhi lega*/
+  margin-top: 8px; 
 }
