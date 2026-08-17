@@ -38,10 +38,10 @@ body {
 }
 
 .main-content {
-  height: 90vh;
   background-color: var(--inner-container-bg);
   border-radius: 20px;
   border: 1px solid var(--border-color);
+  padding: 35px;
 }
 
 .profile {
@@ -89,13 +89,116 @@ img's under profile */
   color: var(--link-color);
 }
 
-.value{
-    color: var(--text-color);
-    text-decoration: none;
+.value {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
-.email, .phone, .location{
-    margin-bottom: 15px;
+.email,
+.phone,
+.location {
+  margin-bottom: 15px;
 }
 
+/*Social media links*/
+.social {
+  margin-top: 30px;
+  border-top: 2.5px solid var(--border-color);
+  padding-top: 15px;
+  text-align: center;
+}
+
+.social img {
+  height: 25px;
+  width: 25px;
+  filter: grayscale(1) invert(0.7);
+  transition: filter 0.3s ease; /*filter style pe change 0.3sec le slow gradual*/
+  margin-left: 5px;
+}
+
+.social img:hover {
+  filter: grayscale(0) invert(0);
+}
+
+.social a {
+  text-decoration: none;
+}
+
+/*Main content*/
+
+/*Navigation*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+#navigation {
+  border-bottom: 2.5px solid var(--border-color);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.active,
+nav a:hover {
+  color: var(--shiny-color);
+}
+
+/*About section*/
+.about-heading {
+  color: var(--text-color);
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--shiny-color);
+  margin-bottom: 13px;
+}
+
+.content {
+  text-align: justify;
+}
+
+#about {
+  margin-bottom: 30px;
+}
+
+/*Skills section*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;
+}
+.item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2.5px solid var(--border-color);
+    text-align: center;
+    background-color: var(--main-background-color);
+    margin-top: 10px;
+    transition: transform 0.3s ease, boxshadow 0.3s ease;
+}
+.item img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.item h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.item:hover{
+   transform: scale(1.1);
+   box-shadow: 0px 0px 10px 5px rgba(71, 75, 33, 0.3);
+}
 
