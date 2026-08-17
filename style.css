@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+.main-container{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr; /*350px to sidebar, ramaining to next container*/
+    gap: 40px; 
+}
+
+.sidebar{
+    height: 90vh;
+    background-color: #2a2a2a;
+}
+
+.main-content{
+    height: 90vh;
+    background-color: #2a2a2a;
+}
