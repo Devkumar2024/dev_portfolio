@@ -35,6 +35,8 @@ body {
   background-color: var(--inner-container-bg);
   border-radius: 20px;
   border: 1px solid var(--border-color);
+  position: sticky;
+  top: 40px;
 }
 
 .main-content {
@@ -128,9 +130,10 @@ img's under profile */
 
 /*Navigation*/
 nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    gap: 20px;
 }
 nav a {
   text-decoration: none;
@@ -143,7 +146,23 @@ nav a {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
+nav .cv-btn {
+    color: var(--shiny-color);
+    border: 1px solid var(--shiny-color);
+    padding: 0px 9px;
+    border-radius: 4px;
+    font-weight: 500;
 
+    box-shadow: 0 0 6px rgba(255, 223, 1, 0.25);
+    transition: all 0.3s ease;
+}
+
+nav .cv-btn:hover {
+    background-color: var(--shiny-color);
+    color: var(--main-background-color);
+
+    box-shadow: 0 0 12px rgba(255, 223, 1, 0.5);
+}
 .active,
 nav a:hover {
   color: var(--shiny-color);
@@ -177,28 +196,132 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 40px;
 }
-.item{
-    padding: 20px;
-    border-radius: 10px;
-    border: 2.5px solid var(--border-color);
-    text-align: center;
-    background-color: var(--main-background-color);
-    margin-top: 10px;
-    transition: transform 0.3s ease, boxshadow 0.3s ease;
+.item {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2.5px solid var(--border-color);
+  text-align: center;
+  background-color: var(--main-background-color);
+  margin-top: 10px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .item img {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 10px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
 }
 
-.item h3{
-    font-size: 1rem;
-    font-weight: 600;
+.item h3 {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-.item:hover{
-   transform: scale(1.1);
-   box-shadow: 0px 0px 10px 5px rgba(71, 75, 33, 0.3);
+.item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 5px rgba(71, 75, 33, 0.3);
 }
 
+/*Education*/
+#education {
+  margin-top: 30px;
+}
+.edtech {
+  position: relative;
+}
+.year {
+  font-size: 0.9rem;
+  color: var(--link-color);
+  margin-bottom: 4px;
+}
+.degree {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.college {
+  color: var(--link-color);
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.work {
+  color: var(--link-color);
+}
+.edfirst,
+.edsecond {
+  position: relative;
+  padding: 10px 10px 20px 35px;
+}
+.goal {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 4px solid var(--shiny-color);
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  z-index: 2;
+}
+.liner {
+  position: absolute;
+  width: 2px;
+  top: 0px;
+  left: 6px;
+  bottom: 0px;
+  border: 2px solid var(--border-color);
+}
+
+/*Protfolio*/
+#portfolio {
+  margin-top: 30px;
+}
+.project-container {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.project {
+  background-color: var(--main-background-color);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    boxshadow 0.3s ease;
+}
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 10px 5px rgba(71, 75, 33, 0.3);
+}
+.project img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  padding: 15px;
+}
+.card h3 {
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+.card p {
+  color: var(--link-color);
+  line-height: 1.6;
+  text-align: start;
+  margin-bottom: 15px;
+}
+
+.card span {
+  background-color: rgba(255, 191, 0, 0.1);
+  color: var(--shiny-color);
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  margin-right: 7px;
+  border-radius: 5px;
+}
