@@ -1,238 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio 1.0</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="main-container">
-            <!--Sidebar-->
-            <div class="sidebar">
-                <!--Profile-->
-                <div class="profile">
-                    <img src="./image/profile.png" alt="Dev kaumar">
-                    <h2>Dev kumar</h2>
-                    <p>Jr. SE Intern</p>
-                </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Kumar — Portfolio</title>
+  <meta name="description" content="Dev Kumar — Jr. Software Engineer. C++, JavaScript, SQL and web development. Backend-focused.">
+  <meta name="theme-color" content="#1e1e1e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='88'>⚡</text></svg>">
 
-                <!--Contact-->
-                <div class="contact">
-                    <div class="email">
-                        <h3 class="label">Email</h3>
-                        <a href="mailto:dev6840@gmail.com"
-                            class="value">dev6840@gmail.com</a>
-                    </div>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <!-- 1 line, lets CSS hide reveal elements only when JS is alive -->
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
 
-                    <div class="phone">
-                        <h3 class="label">Phone</h3>
-                        <a href="tel:+911111111111" class="value">
-                            +91 XXXXXXXXXX</a>
-                    </div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-                    <div class="location">
-                        <h3 class="label">Location</h3>
-                        <p class="value">Punjab, India</p>
-                    </div>
-                </div>
+  <div class="layout">
 
-                <!--Social Media-->
-                <div class="social">
-                    <a href="https://x.com" target="_blank">
-                        <img
-                            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/x.svg"
-                            alt="twitter">
-                    </a>
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="./image/profile.png" alt="Dev Kumar"
+             width="140" height="140" fetchpriority="high" decoding="async">
+        <h2>Dev Kumar</h2>
+        <p class="role">Jr. SE Intern</p>
+      </div>
 
-                    <a href="https://github.com/Devkumar2024" target="_blank">
-                        <img
-                            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg"
-                            alt="github">
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/devdkcs/"
-                        target="_blank">
-                        <img
-                            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
-                            alt="linkedin">
-                    </a>
-                </div>
-            </div>
-
-            <!--Main Content-->
-            <div class="main-content">
-
-                <!--Navigation-->
-                <div id="navigation">
-                    <!-- A <nav> explicitly tells the browser, search engines, and screen readers that the content inside is a major navigation block-->
-
-                    <nav>
-                        <a href="#about" class="active">About</a>
-                        <a href="#skill">Skills</a>
-                        <a href="#education">Education</a>
-                        <a href="#portfolio">Portfolio</a>
-                         <a href="./pdf/index.html" target="_blank" class="cv-btn">CV</a>
-                    </nav>
-                </div>
-
-                <!--About me-->
-                <div id="about">
-                    <h2 class="about-heading">About me</h2>
-                    <div class="line"></div>
-                    <div class="content">
-                        <p> Information Technology graduate with a foundation in
-                            C++, JavaScript, SQL, and web development. Currently
-                            strengthening software development fundamentals with
-                            a focus on backend development and building
-                            applications independently. Strong problem-solving
-                            foundation with a GATE CSE 2026 percentile of 93.56,
-                            and interested in growing into a backend/software
-                            engineering role.</p>
-                    </div>
-                </div>
-
-                <!--Skills-->
-                <div id="skill">
-                    <h2 class="about-heading">Skills</h2>
-                    <div class="line"></div>
-                    <div class="grid-container">
-                        <div class="item">
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                                alt="HTML5">
-                            <h3>HTML5</h3>
-                        </div>
-
-                        <div class="item">
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                                alt="CSS3">
-                            <h3>CSS3</h3>
-                        </div>
-
-                        <div class="item">
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                                alt="JavaScript">
-                            <h3>JavaScript</h3>
-                        </div>
-
-                        <div class="item">
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-                                alt="React">
-                            <h3>React</h3>
-                        </div>
-
-                        <div class="item">
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-                                alt="GitHub">
-                            <h3>Git/GitHub</h3>
-                        </div>
-
-                        <div class="item">
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                                alt="TypeScript">
-                            <h3>TypeScript</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Education-->
-                <div id="education">
-                    <h2 class="about-heading">Education</h2>
-                    <div class="line"></div>
-                    <div class="edtech">
-                        <div class="edfirst">
-                            <div class="year">2020-2024</div>
-                            <h3 class="degree">Bachelor of Technology IT</h3>
-                            <p class="college">GNDEC Ludhiana</p>
-                            <p class="work">Activities and societies: Subjects
-                                Taken: Computer Architecture, Operating
-                                System, Data Structure and Algorithm,
-                                Engineering
-                                Mathematics, Discrete Mathematics, Theory of
-                                Computation, Compiler Design, Computer
-                                Networking, Java, C, C++</p>
-                            <div class="goal"></div>
-                        </div>
-                        <div class="edsecond">
-                            <div class="year">2013–2020</div>
-                            <h3 class="degree">High School, Primary
-                                Education</h3>
-                            <p class="college">Central Board of Secondary
-                                Education</p>
-                            <p class="work">Participated in different many
-                                science, physics, mathematics and drawing
-                                competitions. Gold medal in SOF Physics Olympiad
-                                in class
-                                12th at school level.
-                                <br>
-                                <b><i>Class 12th-[PCM] = 88.6%</i></b> <br>
-                                <b><i>Class X = 89.2%</i></b>
-                            </p>
-                            <div class="goal"></div>
-                        </div>
-
-                        <div class="liner"></div>
-                    </div>
-                </div>
-
-                <!--Portfolio-->
-                <div id="portfolio">
-                    <h2 class="about-heading">Protfolio</h2>
-                    <div class="line"></div>
-
-                    <div class="project-container">
-                        <div class="project">
-                            <img src="./image/Project1.png" alt>
-                            <div class="card">
-                                <h3>Ed-Tech platform</h3>
-                                <p>A web portal for teachers to create courses,
-                                    accessible to
-                                    students by category.</p>
-                                <span>javascript</span><span>tailwind CSS</span>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./image/Project2.png" alt>
-                            <div class="card">
-                                <h3>Room Reservation System</h3>
-                                <p>Developed a robust system for room
-                                    reservation
-                                    along with admin
-                                    panel.</p>
-                                <span>Laravel</span><span>tailwind CSS</span>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./image/Project3.png" alt>
-                            <div class="card">
-                                <h3>Instant messaging
-                                    application</h3>
-                                <p>Developed discord like VoIP application with
-                                    functionalities
-                                    like group creation, audio/video class
-                                    etc.</p>
-                                <span>Next
-                                    js</span><span>prisma</span><span>socketIO</span>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./image/Project4.png" alt>
-                            <div class="card"><h3>Portfolio Webiste</h3>
-                                <p>A basic profolio webiste to showcase skills
-                                    and
-                                    education, will work as my resume</p>
-                                <span>HTML</span><span>CSS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="contact">
+        <div class="contact-item">
+          <h3 class="label">Email</h3>
+          <a class="value" href="mailto:dev6840@gmail.com">dev6840@gmail.com</a>
         </div>
-    </body>
+        <div class="contact-item">
+          <h3 class="label">Phone</h3>
+          <a class="value" href="tel:+911111111111">+91 XXXXXXXXXX</a>
+        </div>
+        <div class="contact-item">
+          <h3 class="label">Location</h3>
+          <p class="value">Punjab, India</p>
+        </div>
+      </div>
+
+      <div class="social">
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/x.svg"
+               alt="" width="22" height="22" loading="lazy" decoding="async">
+        </a>
+        <a href="https://github.com/Devkumar2024" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg"
+               alt="" width="22" height="22" loading="lazy" decoding="async">
+        </a>
+        <a href="https://www.linkedin.com/in/devdkcs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
+               alt="" width="22" height="22" loading="lazy" decoding="async">
+        </a>
+      </div>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main class="content" id="main">
+
+      <nav class="topnav" aria-label="Sections">
+        <a href="#about" class="active">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="./pdf/index.html" target="_blank" rel="noopener noreferrer" class="cv-btn">CV</a>
+      </nav>
+
+      <!-- ABOUT -->
+      <section class="section" id="about" data-reveal>
+        <h2 class="section-title">About me</h2>
+        <p class="lede">
+          Information Technology graduate with a foundation in C++, JavaScript, SQL and web
+          development. Currently strengthening software development fundamentals with a focus on
+          backend development and building applications independently. Strong problem-solving
+          foundation with a GATE CSE 2026 percentile of 93.56, and interested in growing into a
+          backend / software engineering role.
+        </p>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills" data-reveal>
+        <h2 class="section-title">Skills</h2>
+        <div class="skill-grid">
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                 alt="" width="44" height="44" loading="lazy" decoding="async">
+            <h3>HTML5</h3>
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                 alt="" width="44" height="44" loading="lazy" decoding="async">
+            <h3>CSS3</h3>
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                 alt="" width="44" height="44" loading="lazy" decoding="async">
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                 alt="" width="44" height="44" loading="lazy" decoding="async">
+            <h3>React</h3>
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                 alt="" width="44" height="44" loading="lazy" decoding="async">
+            <h3>TypeScript</h3>
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                 alt="" width="44" height="44" loading="lazy" decoding="async">
+            <h3>Git / GitHub</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section" id="education" data-reveal>
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline">
+          <details class="entry">
+            <summary>
+              <span class="year">2020 — 2024</span>
+              <span class="degree">Bachelor of Technology, IT</span>
+              <span class="college">GNDEC Ludhiana</span>
+            </summary>
+            <p class="work">
+              Subjects: Computer Architecture, Operating Systems, Data Structures &amp; Algorithms,
+              Engineering Mathematics, Discrete Mathematics, Theory of Computation, Compiler Design,
+              Computer Networking, Java, C, C++.
+            </p>
+          </details>
+
+          <details class="entry">
+            <summary>
+              <span class="year">2013 — 2020</span>
+              <span class="degree">High School, Primary Education</span>
+              <span class="college">Central Board of Secondary Education</span>
+            </summary>
+            <p class="work">
+              Participated in science, physics, mathematics and drawing competitions. Gold medal in
+              SOF Physics Olympiad (class 12, school level).<br>
+              <b><i>Class 12th [PCM] = 88.6%</i></b><br>
+              <b><i>Class X = 89.2%</i></b>
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="section" id="portfolio" data-reveal>
+        <h2 class="section-title">Portfolio</h2>
+
+        <div class="project-grid">
+          <article class="project">
+            <img src="./image/Project1.png" alt="Ed-Tech platform screenshot"
+                 width="600" height="360" loading="lazy" decoding="async">
+            <div class="card">
+              <h3>Ed-Tech Platform</h3>
+              <p>A web portal for teachers to create courses, accessible to students by category.</p>
+              <div class="tags"><span>JavaScript</span><span>Tailwind CSS</span></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="./image/Project2.png" alt="Room reservation system screenshot"
+                 width="600" height="360" loading="lazy" decoding="async">
+            <div class="card">
+              <h3>Room Reservation System</h3>
+              <p>Robust room reservation system with a full admin panel.</p>
+              <div class="tags"><span>Laravel</span><span>Tailwind CSS</span></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="./image/Project3.png" alt="Instant messaging application screenshot"
+                 width="600" height="360" loading="lazy" decoding="async">
+            <div class="card">
+              <h3>Instant Messaging App</h3>
+              <p>Discord-like VoIP application with group creation and audio / video calls.</p>
+              <div class="tags"><span>Next.js</span><span>Prisma</span><span>Socket.IO</span></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="./image/Project4.png" alt="Portfolio website screenshot"
+                 width="600" height="360" loading="lazy" decoding="async">
+            <div class="card">
+              <h3>Portfolio Website</h3>
+              <p>A lightweight portfolio to showcase skills and education — doubles as my resume.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
 </html>
